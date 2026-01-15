@@ -15,6 +15,7 @@
                 </a>
             </li>
 
+            <!-- General Settings -->
             <li class="menu-title small text-uppercase"><span class="menu-title-text">Pusat Kontrol</span></li>
             <li class="menu-item">
                 <a href="javascript:void(0);" class="menu-link menu-toggle">
@@ -30,6 +31,7 @@
                 </ul>
             </li>
 
+            <!-- Homepage Editor -->
             <li class="menu-title small text-uppercase"><span class="menu-title-text">Homepage Editor</span></li>
             <li class="menu-item">
                 <a href="javascript:void(0);" class="menu-link menu-toggle">
@@ -45,6 +47,7 @@
                 </ul>
             </li>
 
+            <!-- Content Modules -->
             <li class="menu-title small text-uppercase"><span class="menu-title-text">Modul Konten</span></li>
             <li class="menu-item">
                 <a href="javascript:void(0);" class="menu-link menu-toggle">
@@ -79,6 +82,15 @@
                 </ul>
             </li>
 
+            <li class="menu-item {{ Request::is('admin/users*') ? 'active' : '' }}">
+                <a href="{{ route('admin.users.index') }}" class="menu-link">
+                    <span class="material-symbols-outlined menu-icon">person</span>
+                    <span class="title">Manajemen Pengguna</span>
+                </a>
+            </li>
+
+
+            <!-- External Link -->
             <li class="menu-item mt-5">
                 <a href="{{ url('/') }}" class="menu-link bg-primary text-white" target="_blank">
                     <span class="material-symbols-outlined menu-icon text-white">visibility</span>
